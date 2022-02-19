@@ -54,7 +54,7 @@ public class DrivetrainSubsystem implements Subsystem, UpdateManager.Updatable  
 
     public enum DriveSpeed{
         BABY(0.4), TODDLER(0.6), TEENAGER(0.8), ADULT(1);
-        double speed;
+        final double speed;
         DriveSpeed(double i) {
             speed = i;
         }
